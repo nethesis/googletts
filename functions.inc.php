@@ -166,6 +166,7 @@ function googletts_tts($text,$lang='it',$voicename=FALSE){
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     $return = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     $err = curl_errno($ch);
