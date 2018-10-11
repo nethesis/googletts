@@ -22,11 +22,11 @@ No
 
 No
 
-* Does this module supports other engines different than Google Cloud Text to Speech?
+* Does this module support engines different than Google Cloud Text to Speech?
 
 No
 
-* Does this project has been made with or by Google?
+* Does this project have been made with or by Google?
 
 No
 
