@@ -114,7 +114,7 @@ msgstr "Imposta l'API Key di Google"
 
 #: views/bootnav.php:2
 msgid "Add TTS Recording"
-msgstr "Aggoingi registrazione TTS"
+msgstr "Aggiungi registrazione TTS"
 
 #: views/config.php:39
 msgid "Google API Key"
