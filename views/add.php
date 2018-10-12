@@ -91,7 +91,7 @@
             <div class="col-md-7">
                 <select class="form-control" id="voice" name="voice">
                 <?php foreach(googletts_getAvailableVoices($SoundLang->getLanguages()) as $voice) {?>
-                    <option value="<?php echo $voice[1]?>" <?php echo (substr($voice[0],0,2)==$SoundLang->getLanguage() && strpos($voice[1],'Wavenet') !== FALSE ) ? 'SELECTED': ''?>><?php echo $voice[1]?></option>
+                    <option value="<?php echo $voice[1]?>" <?php echo (substr($voice[0],0,2)==$SoundLang->getLanguage() && strpos($voice[1],'Wavenet') !== FALSE ) ? 'SELECTED': ''?>><?php echo $voice[1].' ('._(strtolower($voice[2])).')'?></option>
                 <?php } ?>
                 </select>
             </div>

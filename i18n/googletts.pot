@@ -100,6 +100,14 @@ msgstr ""
 msgid "Voice"
 msgstr ""
 
+#: views/add.php:94
+msgid "male"
+msgstr ""
+
+#: views/add.php:94
+msgid "female"
+msgstr ""
+
 #: views/add.php:100
 msgid "Choose voice that will read the message. Wavenet voices has better quality"
 msgstr ""

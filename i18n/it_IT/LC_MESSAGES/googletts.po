@@ -93,6 +93,14 @@ msgstr "Lingua della registrazione"
 msgid "Voice"
 msgstr "Voce"
 
+#: views/add.php:94
+msgid "male"
+msgstr "maschio"
+
+#: views/add.php:94
+msgid "female"
+msgstr "femmina"
+
 #: views/add.php:100
 msgid ""
 "Choose voice that will read the message. Wavenet voices has better quality"
