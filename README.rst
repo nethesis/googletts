@@ -11,6 +11,43 @@ Configuration
 
 Just insert your Google API key https://cloud.google.com/docs/authentication/api-keys#creating_an_api_key and enjoy
 
+Using this module functions
+==========================
+
+* googletts_getAvailableVoices( [LANG] )
+
+  get list of available voices.
+
+  LANG: language code. Can be a string identifying the language ( de | en | es | fr | it | ja | ko | nl | pt | sv | tr ) or an array like the one returned by Soundlang modules: Soundlang()->getLanguages()
+
+
+
+* googletts_tts( TEXT [,LANG] [,VOICE] )
+
+  Use TTS API to get an audio file for the message. Return a checksum identifyng the message.
+
+  TEXT: text to read using TTS
+  LANG: language code. A string identifying the language ( de | en | es | fr | it | ja | ko | nl | pt | sv | tr )
+  VOICE: string. A voice available in google TTS, like 'de-DE-Wavenet-A'. "Wavenet" voices have better quality over "Standard".
+
+
+* googletts_get_unsaved_audio(CHECKSUM)
+
+  return base 64 encoded audio.
+
+  CHECKSUM: string as returned by googletts_tts()
+
+
+* googletts_save_recording(CHECKSUM,LANG,NAME,DESCRIPTION)
+
+  save recording as FreePBX system recording, to allow to be used by other modules like Announcements, IVRs, ...
+
+  CHECKSUM: string as returned by googletts_tts()
+  LANG: language code. A string identifying the language, like "en" or "it"
+  NAME: a string, it will be the name of the recording in System Recording module
+  DESCRIPTION: a string, it will be the description of the recording in System Recording module
+
+
 FAQ
 ===
 
