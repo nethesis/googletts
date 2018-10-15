@@ -130,7 +130,7 @@ function googletts_tts($text,$lang='it',$voicename=FALSE){
             $voice = $v;
         }
     } else {
-        foreach (googletts_getAvailableVoices($lang) as $v) {
+        foreach (googletts_getAvailableVoices() as $v) {
             if ($voicename == $v[1]) {
                 $voice = $v;
                 break;
