@@ -73,7 +73,7 @@ No
 
 * Should I report bugs and feature requests to Google or FreePBX?
 
-No
+No, use https://community.nethserver.org instead
 
 License
 =======
