@@ -174,9 +174,11 @@ function googletts_tts($text,$lang='it',$voicename=FALSE){
     $header = curl_getinfo($ch);
     curl_close($ch);
 
-    if ($httpCode != 200 ) {
-        error_log($errmsg);
-        return false;
+    if ($errmsg) {
+        throw new Exception($errmsg);
+    }
+    if ($httpCode != 200) {
+        throw new Exception($return);
     }
     $return = json_decode($return);
 
